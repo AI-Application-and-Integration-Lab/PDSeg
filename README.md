@@ -47,7 +47,7 @@ pip install scikit-image
 ```
 
 ## 📁 Datasets
-You can get the LUAD dataset from [here](https://github.com/ChuHan89/WSSS-Tissue).
+You can get the LUAD-HistoSeg and BCSS-WSSS dataset from [here](https://github.com/ChuHan89/WSSS-Tissue).
 
 If your dataset is in a different folder, make a soft-link from the target dataset to the `data` folder. We expect the following tree:
 ```
