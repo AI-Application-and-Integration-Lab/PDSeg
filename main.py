@@ -16,7 +16,7 @@ def main():
     parser.add_argument("--val", action="store_true", default=False)
     parser.add_argument("--test", action="store_true", default=False)
     parser.add_argument("--test_on_train", action="store_true", default=False)
-    parser.add_argument("--ckpt_name", type=str, default=None)
+    parser.add_argument("--ckpt_name", type=str, default='best_model.pth')
     parser.add_argument("--resume", action="store_true", default=False)
     parser.add_argument("--stage", type=int, default=1)
     
@@ -94,11 +94,9 @@ def main():
             'optimizer' : 'side',  # side
             'prot': None
         }
-    
-    ckpt_name = 'final_model.pth'
-    if args.ckpt_name:
-        ckpt_name = f'final_model_{args.ckpt_name}.pth'
-    
+
+    ckpt_name = args.ckpt_name
+
     if args.resume:
         checkpoint = torch.load(os.path.join(path_work, ckpt_name), map_location="cpu")
         model.load_state_dict(checkpoint["model_state"], strict=True)

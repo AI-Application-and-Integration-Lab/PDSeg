@@ -32,7 +32,7 @@ We propose a novel framework that combines patch-wise knowledge distillation wit
 ## ⚙️ Installation and Requirements
 We are tested under:
 ```
-python 3.8
+python 3.11
 ```
 If you want to install a custom environment for this code, you can run the following using [conda](https://docs.conda.io/projects/conda/en/latest/commands/install.html):
 ```
@@ -46,24 +46,39 @@ pip install scikit-learn
 pip install scikit-image
 ```
 
-## 📁 Datasets
+## 📁 Datasets and Our checkpoints
 You can get the LUAD-HistoSeg and BCSS-WSSS dataset from [here](https://github.com/ChuHan89/WSSS-Tissue).
 
 If your dataset is in a different folder, make a soft-link from the target dataset to the `data` folder. We expect the following tree:
 ```
-dataset/
 data/
     BCSS-WSSS/
-
+checkpoint/
+    bcss_baseline/
+      best_model.pth
 ... other files 
 ```
-## 🏋️ Training
+## 🏋️ Training and Evaluation
+Checkpoints for BCSS-WSSS: [link](https://gofile.me/5R0b8/pIWdfNZ8p)
 
 ```
 bash run_bcss.sh
 ```
 
-## 🔍 Inference
+## 📝 Citation
+
+If you find this work useful in your research, please cite our paper:
+
+```
+@inproceedings{li2025pdseg,
+  title={PDSeg: Patch-Wise Distillation and Controllable Image Generation for Weakly-Supervised Histopathology Tissue Segmentation},
+  author={Li, Wei-Hua and Hsieh, Yu-Hsing and Yang, Huei-Fang and Chen, Chu-Song},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+```
 
 ---
 Stay tuned for code release and updates!  
