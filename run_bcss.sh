@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES='0' python main.py --path_work 'checkpoints/bcss_baseline/' --classes 4 --batch_size 16 \
+--dataset BCSS-WSSS --val --model segmenter --token_distill --cnn_distill --mid_decode --weakly --test

@@ -1,0 +1,6 @@
+timm==0.6.13
+opencv-python
+einops
+scikit-learn
+scikit-image
+pandas
