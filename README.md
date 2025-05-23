@@ -1,4 +1,4 @@
-# 🧠 PDSeg
+# 🔬 PDSeg: Patch-Wise Distillation and Controllable Image Generation for Weakly-Supervised Histopathology Tissue Segmentation
 [![Paper](https://img.shields.io/badge/Paper-ICASSP25-blue)](https://ieeexplore.ieee.org/abstract/document/10888097)
 
 Welcome! 👋 This repository contains the official implementation of our **ICASSP 2025** paper:  
@@ -11,7 +11,7 @@ We propose a novel framework that combines patch-wise knowledge distillation wit
 ## 🖼️ Overview
 
 <p align="center">
-  <img src="image/pdseg.png" width="500" alt="PDSeg Overview"/>
+  <img src="image/pdseg.png" width="800" alt="PDSeg Overview"/>
 </p>
 
 ---
@@ -22,7 +22,7 @@ We propose a novel framework that combines patch-wise knowledge distillation wit
   <br>
 
   <p align="center">
-    <img src="image/comparison.png" width="500" alt="Comparison on datasets"/>
+    <img src="image/comparison.png" width="800" alt="Comparison on datasets"/>
   </p>
 
 </details>
