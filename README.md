@@ -47,19 +47,31 @@ pip install scikit-image
 ```
 
 ## 📁 Datasets and Our checkpoints
-You can get the LUAD-HistoSeg and BCSS-WSSS dataset from [here](https://github.com/ChuHan89/WSSS-Tissue) and our checkpoints for LUAD-HistoSeg and BCSS-WSSS: [link](https://gofile.me/5R0b8/Is9Jufem1)
+You can get the LUAD-HistoSeg and BCSS-WSSS dataset from [here](https://github.com/ChuHan89/WSSS-Tissue) and our [checkpoints](https://gofile.me/5R0b8/Is9Jufem1).
 
 If your dataset is in a different folder, make a soft-link from the target dataset to the `data` folder. We expect the following tree:
 ```
 data/
     BCSS-WSSS/
+      training/
+      test/
+      val/
+    LUAD-HistoSeg/
 checkpoint/
     bcss_baseline/
+      best_model.pth
+    luad_baseline/
       best_model.pth
 ... other files 
 ```
 ## 🏋️ Training and Evaluation
 
+### for LUAD-HistoSeg
+```
+bash run_luad.sh
+```
+
+### for BCSS-WSSS
 ```
 bash run_bcss.sh
 ```
