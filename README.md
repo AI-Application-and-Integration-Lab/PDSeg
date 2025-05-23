@@ -29,5 +29,42 @@ We propose a novel framework that combines patch-wise knowledge distillation wit
 
 ---
 
+## ⚙️ Installation and Requirements
+We are tested under:
+```
+python 3.8
+```
+If you want to install a custom environment for this code, you can run the following using [conda](https://docs.conda.io/projects/conda/en/latest/commands/install.html):
+```
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+conda install matplotlib
+
+pip install timm==0.6.13
+pip install opencv-python
+pip install einops
+pip install scikit-learn
+pip install scikit-image
+```
+
+## 📁 Datasets
+You can get the LUAD dataset from [here](https://github.com/ChuHan89/WSSS-Tissue).
+
+If your dataset is in a different folder, make a soft-link from the target dataset to the `data` folder. We expect the following tree:
+```
+dataset/
+data/
+    BCSS-WSSS/
+
+... other files 
+```
+## 🏋️ Training
+
+```
+bash run_bcss.sh
+```
+
+## 🔍 Inference
+
+---
 Stay tuned for code release and updates!  
 📬 Questions or feedback? Feel free to open an issue or contact us.
