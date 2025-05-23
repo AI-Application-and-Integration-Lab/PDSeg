@@ -1,5 +1,5 @@
 # 🔬 PDSeg: Patch-Wise Distillation and Controllable Image Generation for Weakly-Supervised Histopathology Tissue Segmentation
-[![Paper](https://img.shields.io/badge/Paper-ICASSP25-blue)](https://ieeexplore.ieee.org/abstract/document/10888097) [![License: MIT](https://img.shields.io/badge/License--green.svg)](./LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-ICASSP25-blue)](https://ieeexplore.ieee.org/abstract/document/10888097) [![License](https://img.shields.io/badge/license-custom-lightgrey)](./LICENSE)
 
 Welcome! 👋 This repository contains the official implementation of our **ICASSP 2025** paper:  
 **"PDSeg: Patch-Wise Distillation and Controllable Image Generation for Weakly-Supervised Histopathology Tissue Segmentation"**.
